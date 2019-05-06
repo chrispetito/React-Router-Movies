@@ -9,7 +9,8 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      savedList: []
+      savedList: [],
+      clearList: []
     };
   }
 
@@ -18,6 +19,14 @@ export default class App extends Component {
     savedList.push(movie);
     this.setState({ savedList });
   };
+
+  // clearSavedList = movie => {
+  //   const clearList = this.state.clearList;
+  //   const savedList = this.state.savedList;
+  //   if (savedList.includes(movie)) {
+  //     this.setState({clearList})
+  //   }
+  // }
 
   render() {
     return (

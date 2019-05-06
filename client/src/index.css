@@ -13,12 +13,20 @@ body {
   padding: 1rem;
   cursor: pointer;
   position: relative;
-  margin: 1rem auto;
+  margin: 0 auto;
+  width: 75%;
+  text-decoration: none;
+  color: #4f4f4f;
+  text-emphasis: none;
+}
+.movie-card div {
+  text-decoration: none;
 }
 
 .movie-director {
   padding: 4px 0;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 
 .saved-list {
@@ -59,11 +67,13 @@ body {
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: #c4c4c4;
+  border-radius: 5px;
 }
 .save-button:hover {
   background-color: green;
   color: white;
+  cursor: pointer;
 }
 
 .home-button {

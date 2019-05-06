@@ -45,9 +45,11 @@ export default class Movie extends Component {
 
     return (
       <div>
-     <MovieCard key={this.state.movie.id} movie={this.state.movie} />
-     <button onClick={this.saveMovie}>Save
-      </button>
+      <div>
+     <MovieCard key={this.state.movie.id} movie={this.state.movie} save={this.props.addToSavedList}/>
+     
+      </div>
+      <div onClick={this.saveMovie} className="save-button">Save</div>
       </div>
       );
   }
