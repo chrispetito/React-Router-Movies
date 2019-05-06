@@ -33,16 +33,22 @@ export default class Movie extends Component {
     }
   }
 
-  // saveMovie = () => {
-  //   const addToSavedList = this.props.addToSavedList;
-  //   addToSavedList(this.state.movie)
-  // }
+  saveMovie = () => {
+    const addToSavedList = this.props.addToSavedList;
+    addToSavedList(this.state.movie)
+  }
 
   render() {
     if (!this.state.movie) {
       return <div>Loading movie information...</div>;
     }
 
-    return <MovieCard key={this.state.movie.id} movie={this.state.movie} />;
+    return (
+      <div>
+     <MovieCard key={this.state.movie.id} movie={this.state.movie} />
+     <button onClick={this.saveMovie}>Save
+      </button>
+      </div>
+      );
   }
 }
