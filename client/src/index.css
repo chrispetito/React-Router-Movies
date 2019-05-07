@@ -71,12 +71,15 @@ body {
   border-radius: 5px;
 }
 .save-button:hover {
-  background-color: green;
-  color: white;
+  background-color: #efefef;
+  color: gray;
   cursor: pointer;
 }
 
 .home-button {
   padding: 5px 10px;
-  background-color: lightskyblue;
+  background-color: #c4c4c4;
+  color: gray;
+  text-decoration: none;
+  border-radius: 5px;
 }
